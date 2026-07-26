@@ -1,14 +1,14 @@
-Projetos Básicos em JavaScript
+##Projetos Básicos em JavaScript
 
 Coleção de projetos desenvolvidos durante meus estudos em Desenvolvimento Front-end.
 
-#Tecnologias
+##Tecnologias
 
 - HTML5
 - CSS3
 - JavaScript
 
-#Projetos
+##Projetos
 
 - Agro Clima
 - To Do List
