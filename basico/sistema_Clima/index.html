@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Clima</title>
+    <link rel="stylesheet" href="/sistema_Clima/style.css">
+
+</head>
+<body>
+
+    <main class="container">
+    <section class="card">
+      <h1>AgroClima</h1>
+      <p>Consulte o clima e veja o status da plantação.</p>
+
+      <form id="formClima">
+        <input type="text" id="cidade" placeholder="Digite uma cidade..." required>
+        <button type="submit">Buscar</button>
+      </form>
+
+      <div id="resultado" class="resultado hidden">
+        <h2 id="nomeCidade"></h2>
+
+        <div class="info">
+          <div>
+            <span>Temperatura</span>
+            <strong id="temperatura"></strong>
+          </div>
+
+          <div>
+            <span>Umidade</span>
+            <strong id="umidade"></strong>
+          </div>
+
+          <div>
+            <span>Chuva</span>
+            <strong id="chuva"></strong>
+          </div>
+        </div>
+
+        <div class="status" id="statusPlantacao"></div>
+      </div>
+    </section>
+  </main>
+    
+    <script src="/sistema_Clima/script.js"></script>
+</body>
+</html>

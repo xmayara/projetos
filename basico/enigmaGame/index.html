@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Enigma</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+
+    <section id="telaInicial" class="card">
+      <p class="tag">Arquivo Confidencial</p>
+      <h1>Mini Enigma</h1>
+      <p class="intro">
+        Resolva os enigmas antes que o tempo acabe. Você tem 3 vidas.
+      </p>
+      <button id="btnIniciar">Iniciar Investigação</button>
+    </section>
+
+    <section id="telaJogo" class="card hidden">
+      <div class="topo">
+        <span id="faseAtual"></span>
+        <span id="vidas"></span>
+        <span id="timer"></span>
+      </div>
+
+      <h1>Enigma</h1>
+
+      <p id="faseTexto" class="fase-texto"></p>
+
+      <div class="dica-box">
+        <strong>Dica:</strong>
+        <span id="dicaTexto"></span>
+      </div>
+
+      <form id="formResposta">
+        <input type="text" id="resposta" placeholder="Digite sua resposta..." required>
+        <button type="submit">Responder</button>
+      </form>
+
+      <p id="mensagem"></p>
+
+      <div class="footer">
+        <span id="pontuacao"></span>
+        <button id="btnReiniciar" type="button">Reiniciar</button>
+      </div>
+    </section>
+
+    <section id="telaFinal" class="card hidden">
+      <p class="tag">Relatório Final</p>
+      <h1 id="tituloFinal"></h1>
+      <p id="textoFinal"></p>
+
+      <h2>Ranking</h2>
+      <ul id="ranking"></ul>
+
+      <button id="btnJogarNovamente">Jogar novamente</button>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
